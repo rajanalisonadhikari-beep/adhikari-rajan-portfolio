@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajan Adhikari — Portfolio</title>
+<meta name="description" content="Rajan Adhikari — entrepreneur, Himalayan guide, and founder based in Nepal.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top"><span class="mark" id="brand-mark">RA</span><span data-name>Rajan Adhikari</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">&#9776;</button>
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#ventures">Ventures</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="wrap">
+      <span class="eyebrow" id="hero-tagline">Entrepreneur • Himalayan Guide • Founder</span>
+      <h1 data-name>Rajan Adhikari</h1>
+      <p class="lead" id="hero-intro"></p>
+      <div class="cta">
+        <a class="btn" href="#ventures">Explore my ventures</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <svg class="mountains" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true">
+      <path fill="var(--surface)" d="M0,220 L0,120 L220,40 L360,120 L560,20 L760,130 L980,50 L1180,140 L1300,80 L1440,150 L1440,220 Z"/>
+      <path fill="var(--accent-soft)" opacity="0.9" d="M0,220 L0,170 L260,110 L470,180 L700,120 L920,185 L1160,120 L1440,190 L1440,220 Z"/>
+    </svg>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="soft">
+    <div class="wrap">
+      <div class="about-grid">
+        <div id="about-photo" class="about-photo placeholder">👤</div>
+        <div>
+          <span class="eyebrow">Who I am</span>
+          <h2 id="about-heading" style="font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:10px 0 16px;">About Me</h2>
+          <div class="about-body" id="about-body"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES -->
+  <section id="ventures">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What I do</span>
+        <h2>Ventures</h2>
+        <p>The businesses I've built and run across Nepal.</p>
+      </div>
+      <div class="cards" id="ventures-grid"></div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="soft">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Latest</span>
+        <h2>From the blog</h2>
+        <p>Notes, updates, and stories.</p>
+      </div>
+      <div class="posts" id="posts-grid"></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-card">
+        <span class="eyebrow">Contact</span>
+        <h2>Let's work together</h2>
+        <p><a id="contact-email" href="#"></a></p>
+        <p id="contact-location"></p>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span>&copy; <span id="year">2026</span> <span data-name>Rajan Adhikari</span></span>
+    <a href="/admin/">Admin</a>
+  </div>
+</footer>
+
+<!-- built-in fallback content so the page is never empty -->
+<script>
+window.__DEFAULTS={
+  site:{name:"Rajan Adhikari",tagline:"Entrepreneur • Himalayan Guide • Founder",heroIntro:"I build businesses rooted in the Himalayas — guiding travelers across Nepal's greatest trails, running a modern barbershop, and growing an imports venture from Kathmandu.",photo:"",aboutHeading:"About Me",about:"I'm Rajan Adhikari, a Nepal-based entrepreneur. Edit this from the admin panel.",email:"hello@adhikari-rajan.com.np",phone:"",location:"Kathmandu, Nepal",socials:[]},
+  ventures:{items:[{name:"Trekking & Expeditions",category:"Adventure Travel",description:"Guided treks and expeditions across Nepal.",link:"",image:""},{name:"Barbershop",category:"Grooming",description:"Modern cuts, beard grooming, and classic shaves.",link:"",image:""},{name:"Imports",category:"Trade",description:"Sourcing and importing quality goods into Nepal.",link:"",image:""}]},
+  blog:{posts:[]}
+};
+</script>
+<script async src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script defer src="js/main.js"></script>
+</body>
+</html>
