@@ -1,0 +1,16 @@
+{
+  "name": "Rajan Adhikari",
+  "tagline": "Entrepreneur • Himalayan Guide • Founder",
+  "heroIntro": "I build businesses rooted in the Himalayas — guiding travelers across Nepal's greatest trails, running a modern barbershop, and growing an imports venture from Kathmandu.",
+  "photo": "",
+  "aboutHeading": "About Me",
+  "about": "I'm Rajan Adhikari, a Nepal-based entrepreneur. Over the years I've turned a love for the mountains into a trekking and expeditions company, opened a modern barbershop, and started an imports business. I care about doing honest work, treating people well, and building things that last.\n\nEdit this text anytime from the admin panel — add your real story, achievements, and the details that make your work yours.",
+  "email": "hello@adhikari-rajan.com.np",
+  "phone": "",
+  "location": "Kathmandu, Nepal",
+  "socials": [
+    { "platform": "Instagram", "url": "#" },
+    { "platform": "Facebook", "url": "#" },
+    { "platform": "WhatsApp", "url": "#" }
+  ]
+}

@@ -1,0 +1,79 @@
+# Decap CMS configuration.
+# backend: git-gateway works with Netlify Identity so you log in with email/password.
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images are stored in the repo, and how the site references them.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Show a live preview link when editing (optional nicety)
+site_url: https://adhikari-rajan.com.np
+display_url: https://adhikari-rajan.com.np
+
+collections:
+  # --- ABOUT / SITE INFO ---
+  - name: "site"
+    label: "Home & About"
+    delete: false
+    files:
+      - name: "general"
+        label: "Home & About"
+        file: "content/site.json"
+        fields:
+          - { label: "Full Name", name: "name", widget: "string" }
+          - { label: "Tagline (small text above your name)", name: "tagline", widget: "string" }
+          - { label: "Hero Intro (short paragraph on the homepage)", name: "heroIntro", widget: "text" }
+          - { label: "Profile Photo", name: "photo", widget: "image", required: false }
+          - { label: "About Heading", name: "aboutHeading", widget: "string" }
+          - { label: "About Text", name: "about", widget: "markdown" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Location", name: "location", widget: "string", required: false }
+          - label: "Social Links"
+            name: "socials"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Platform", name: "platform", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+
+  # --- VENTURES / BUSINESSES ---
+  - name: "ventures"
+    label: "Ventures"
+    delete: false
+    files:
+      - name: "list"
+        label: "Ventures"
+        file: "content/ventures.json"
+        fields:
+          - label: "Ventures"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Link (optional)", name: "link", widget: "string", required: false }
+              - { label: "Image (optional)", name: "image", widget: "image", required: false }
+
+  # --- BLOG ---
+  - name: "blog"
+    label: "Blog"
+    delete: false
+    files:
+      - name: "posts"
+        label: "Blog Posts"
+        file: "content/blog.json"
+        fields:
+          - label: "Posts"
+            name: "posts"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Cover Image (optional)", name: "image", widget: "image", required: false }
+              - { label: "Body", name: "body", widget: "markdown" }

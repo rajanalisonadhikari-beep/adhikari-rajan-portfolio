@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Content Manager — Rajan Adhikari</title>
+</head>
+<body>
+<!-- Netlify Identity: lets you log in to the admin panel -->
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<!-- Decap CMS: the admin panel itself -->
+<script src="https://unpkg.com/decap-cms@^3.3.3/dist/decap-cms.js"></script>
+<script>
+  // After you accept an invite, redirect back into the CMS automatically.
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on('init', user => {
+      if (!user) {
+        window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; });
+      }
+    });
+  }
+</script>
+</body>
+</html>

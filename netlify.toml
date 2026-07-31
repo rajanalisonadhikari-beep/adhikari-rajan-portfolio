@@ -1,0 +1,10 @@
+# Netlify config. No build step needed — the site is plain static files.
+[build]
+  publish = "."
+  command = ""
+
+# Make sure /admin loads the CMS cleanly
+[[redirects]]
+  from = "/admin"
+  to = "/admin/"
+  status = 301

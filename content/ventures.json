@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "name": "Trekking & Expeditions",
+      "category": "Adventure Travel",
+      "description": "Guided treks and expeditions across Nepal — from the Manaslu Circuit to Everest Base Camp. Small groups, licensed local guides, and itineraries built around safety and the real Himalaya.",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Barbershop",
+      "category": "Grooming",
+      "description": "A modern barbershop offering precision cuts, beard grooming, and classic hot-towel shaves in a relaxed, welcoming space.",
+      "link": "",
+      "image": ""
+    },
+    {
+      "name": "Imports",
+      "category": "Trade",
+      "description": "Sourcing and importing quality goods into Nepal — reliable supply, fair pricing, and a growing catalog for local partners and retailers.",
+      "link": "",
+      "image": ""
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "posts": [
+    {
+      "title": "Welcome to my new site",
+      "date": "2026-07-31",
+      "summary": "A quick note on what I'm building and what you'll find here.",
+      "image": "",
+      "body": "This is my new home on the web. From here you can learn about me and my businesses — trekking, the barbershop, and imports.\n\nI can update everything on this site myself from the admin panel. More stories coming soon!"
+    }
+  ]
+}
